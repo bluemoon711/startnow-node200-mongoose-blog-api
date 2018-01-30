@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {"node": ">=8.9.4"},
   "scripts": {
     "start": "node server/index.js",
     "test": "mocha test/**/*.spec.js",
