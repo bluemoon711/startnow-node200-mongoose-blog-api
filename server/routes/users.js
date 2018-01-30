@@ -30,7 +30,7 @@ router.post('/', (req, res) => {
 });
 
 router.put('/:id', (req, res) => {
-    var id = new mongoose.Types.ObjectId(req.body.id);
+    var id = new mongoose.Types.ObjectId(req.params.id);
     User.findByIdAndUpdate(id, req.body)
         .then(doc => {
             res.status(204).send();
